@@ -12,11 +12,8 @@ public class EmployeeWageComputation {
     public static final int MAX_WORKING_DAYS_PER_MONTH = 20;
     public static final int TOTAL_WORKING_HOURS_PER_MONTH = 100;
 
-    public static void main(String[] args) {
-        System.out.println("Welcome to Employee Wage Computation Program");
+    public static void employeeWageMethod() {
 
-        int empPresent = 1;
-        int empHalfDayPresent = 2;
         int dailyWage = 0;
         int totalEmpWage = 0;
         int totalHours = 0;
@@ -42,5 +39,10 @@ public class EmployeeWageComputation {
             System.out.println(empCheck + " Daily Wage of an Employee: " + dailyWage);
         }
         System.out.println("Total Employee Wage: " + totalEmpWage);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to Employee Wage Computation Program");
+        employeeWageMethod();
     }
 }
